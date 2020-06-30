@@ -1,0 +1,63 @@
+{
+  "ip": "http://172.16.1.172:8080",
+  "host": "172.16.1.172",
+  "port": "8080",
+  "username": "tenant@awcloud.com",
+  "password": "tenant",
+  "device_id": "ae9aa3d0-82ab-11ea-bdd3-2fe6ff6aba55",
+  "entityType": "DEVICE",
+  "rpc_id": "cdd78fc0-860b-11ea-b51d-2fe6ff6aba55",
+  "title": "3号温室数据监测",
+  "name": "3号大棚",
+  "id": "666",
+  "type": "单墙大棚",
+  "plantingType": "葡萄",
+  "video_url": "video_url",
+  "pic_url": "intrusion_pic",
+  "picSpeed": 3000,
+  "atmosphereKeys": {
+    "temperature": "temperature",
+    "humidity": "humidity",
+    "illumination": "illumination",
+    "co2": "co2",
+    "pressure": "pressure",
+    "soiltemperature": "soiltemperature",
+    "soilhumidity": "soilhumidity",
+    "ph": "ph",
+    "electrolyte": "electrolyte",
+    "saltcontent": "saltcontent"
+  },
+  "speed": 10000,
+  "rpcSpeed": 5000,
+  "interval": 15000,
+  "time": 2,
+  "temperature": {
+    "agg": "AVG",
+    "atmosphere": "temperature",
+    "soil": "soil",
+    "atmosphereApi": false,
+    "soilApi": false
+  },
+  "humidity": {
+    "agg": "AVG",
+    "atmosphere": "humidity",
+    "soil": "soil",
+    "atmosphereApi": false,
+    "soilApi": false
+  },
+  "insect": {
+    "agg": "AVG",
+    "key": "insect",
+    "api": false
+  },
+  "police": {
+    "agg": "AVG",
+    "key": "police",
+    "api": false
+  },
+  "illumination": {
+    "agg": "AVG",
+    "key": "illumination",
+    "api": false
+  }
+}
