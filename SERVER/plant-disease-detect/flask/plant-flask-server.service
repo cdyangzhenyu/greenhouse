@@ -1,0 +1,12 @@
+[Unit]
+Description = Thingsboard Plant Disease Detect Server Service
+After = rc.local.service
+
+[Service]
+Type = simple
+User = root
+Group = root
+ExecStart = /bin/sh /usr/local/src/plant-disease-detect/flask/run.sh
+
+[Install]
+WantedBy = multi-user.target

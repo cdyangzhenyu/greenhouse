@@ -1,0 +1,12 @@
+[Unit]
+Description = Plant green house rpc Service
+After = rc.local.service
+
+[Service]
+Type = simple
+User = root
+Group = root
+ExecStart = /usr/bin/python /usr/local/src/zigbee-agent/greenhouse_ctl.py
+
+[Install]
+WantedBy = multi-user.target

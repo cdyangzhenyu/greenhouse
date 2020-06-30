@@ -1,0 +1,8 @@
+numpy==1.18.3
+opencv-python==3.4.2.17
+vidgear==0.1.6
+pyzmq==19.0.0
+tensorflow==1.15.0             
+tensorflow-estimator==1.15.1
+mss==5.0.0
+paho-mqtt==1.5.0

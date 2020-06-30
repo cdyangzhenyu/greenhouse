@@ -1,0 +1,12 @@
+[Unit]
+Description = TB Gateway Serial Read Service
+After = rc.local.service
+
+[Service]
+Type = simple
+User = root
+Group = root
+ExecStart = /usr/bin/python //usr/local/src/zigbee-agent/gh_gw_serial_read.py
+
+[Install]
+WantedBy = multi-user.target

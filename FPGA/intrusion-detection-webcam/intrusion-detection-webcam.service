@@ -1,0 +1,12 @@
+[Unit]
+Description = Greenhouse Intrusion Detection Webcam Service
+After = rc.local.service
+
+[Service]
+Type = simple
+User = root
+Group = root
+ExecStart = /usr/bin/intrusion-detection-webcam
+
+[Install]
+WantedBy = multi-user.target

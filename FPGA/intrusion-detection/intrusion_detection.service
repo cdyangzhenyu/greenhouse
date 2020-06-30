@@ -1,0 +1,12 @@
+[Unit]
+Description = Greenhouse Intrusion Detection Service
+After = rc.local.service
+
+[Service]
+Type = simple
+User = root
+Group = root
+ExecStart = /usr/bin/intrusion_detection
+
+[Install]
+WantedBy = multi-user.target

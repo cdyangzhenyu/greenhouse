@@ -1,0 +1,12 @@
+[Unit]
+Description = Plant green house agent Service
+After = rc.local.service
+
+[Service]
+Type = simple
+User = root
+Group = root
+ExecStart = /usr/bin/python /usr/local/src/lora-agent/greenhouse_agent.py
+
+[Install]
+WantedBy = multi-user.target

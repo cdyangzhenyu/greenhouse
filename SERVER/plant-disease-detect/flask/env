@@ -1,0 +1,4 @@
+INSTALLDIR=/home/yt/intel/openvino_2020.1.023/
+HDDL_INSTALL_DIR=$INSTALLDIR/deployment_tools/inference_engine/external/hddl
+IE_PLUGINS_PATH=$INSTALLDIR/deployment_tools/inference_engine/lib/intel64
+LD_LIBRARY_PATH=$HDDL_INSTALL_DIR/lib:$INSTALLDIR/deployment_tools/inference_engine/external/gna/lib:$INSTALLDIR/deployment_tools/inference_engine/external/mkltiny_lnx/lib:$INSTALLDIR/deployment_tools/inference_engine/external/tbb/lib:$IE_PLUGINS_PATH:$INSTALLDIR/deployment_tools/ngraph/lib:$LD_LIBRARY_PATH

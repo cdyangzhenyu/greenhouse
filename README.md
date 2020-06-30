@@ -1,0 +1,6 @@
+### Greenhouse是智慧农业温室大棚项目中涉及到的it综合技术代码
+
+- FPGA是项目中用到的入侵检测部分代码，通过opencv和soc做的图像处理，并将检测到的抓拍图片通过mqtt协议发送到thingsboard网关设备。
+- GATEWAY是thingsboard的网关节点服务，包括zigbee的agent服务，以及thingsboard-gateway服务的配置。
+- SERVER是thingsboard的服务端，包括病虫害检测和thingsboard的服务端配置，使用docker启动服务。
+- STM32F407ZET6是STM32单片机开发板端的代码，控制大棚的开关和获取传感器数据，通过zigbee模块发送到thingsboard-gateway的zigbee-agent服务。
